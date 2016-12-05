@@ -14,6 +14,8 @@ define('SS_ADDR_ABOUT','http://www.pinruan.net/14.html'); 		// 关于的页面�
 
 define('SS_TAGS_PER_ROW',8);		//一行显多少个 tag
 
+// 微语页面卷首语
+define('SS_T_FLAG','人不是通过用计算器学会的计算，但却是靠此手段忘记了算术。<span id="t-flag-author">--莎士比亚</span>');
 define('SS_SITE_NAME','品软网');		//网站名称 用于404页面
 define('SS_SITE_URL','http://localhost/emlog'); 	//网站首页 用于404
 ?>

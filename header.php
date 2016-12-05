@@ -72,6 +72,8 @@ require_once View::getView('module');
 		.comment-time{ font-size: 0.8rem;color:#8A8F98; }
 		.comment{background-color: #FFFFEC;font-size: 0.9rem;}
 		
+		#t-flag{ color:#8A8F98; }
+		#t-flag-author{ font-size: 0.8rem; }
 		#footer{ color:#6f6f6f;}
 		#footer a{ color:#FF8686;}
 		#pagenavi{text-align: center;}
