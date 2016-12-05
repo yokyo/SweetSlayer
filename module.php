@@ -224,7 +224,7 @@ function pr_search(){ ?>
 			<div class="large-12 columns">
 				<div class="row collapse postfix-round">
 					<div class="small-9 columns">
-						<input name="keyword" type="text" placeholder="Value">
+						<input name="keyword" type="text" placeholder="<?php echo SS_SEARCH_PLACEHOLDER; ?>">
 					</div>
 					<div class="small-3 columns">
 						<button class="button postfix" type="summit">Go</button>
@@ -489,9 +489,11 @@ function blog_comments($comments){
 	</div>
 	<hr/>
 	<?php endforeach; ?>
-    <div id="pagenavi">
-	    <?php echo $commentPageUrl;?>
-    </div>
+    <div class="pagination-centered">
+	<ul class="pagination">
+	<?php echo pr_paging(count($commentStacks), Option::get('comment_pnum'), $page, $pageurl, '#comments'); // 翻页?>
+	</ul>
+</div>
 <?php }?>
 <?php
 //blog：子评论列表
