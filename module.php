@@ -489,11 +489,10 @@ function blog_comments($comments){
 	</div>
 	<hr/>
 	<?php endforeach; ?>
-    <div class="pagination-centered">
-	<ul class="pagination">
-	<?php echo pr_paging(count($commentStacks), Option::get('comment_pnum'), $page, $pageurl, '#comments'); // 翻页?>
-	</ul>
-</div>
+	<div class="center">
+		<?php echo $commentPageUrl; ?>
+	</div>
+    
 <?php }?>
 <?php
 //blog：子评论列表

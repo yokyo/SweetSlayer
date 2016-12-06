@@ -43,6 +43,7 @@ foreach($logs as $value):
 	<hr/>
 <?php 
 endforeach;
+
 else:
 ?>
 	<h4>恭喜</h4>
