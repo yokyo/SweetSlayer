@@ -543,24 +543,27 @@ function blog_comments_post($logid,$ckname,$ckmail,$ckurl,$verifyCode,$allow_rem
 			<div class="row">
 			<input type="hidden" name="gid" value="<?php echo $logid; ?>" />
 			<?php if(ROLE == ROLE_VISITOR): ?>
-			<div class="small-4 columns">
+			<div class="small-6 columns">
 				<input type="text" name="comname" maxlength="49" placeholder="昵称" value="<?php echo $ckname; ?>" size="22" tabindex="1">	
 			</div>
-				
-			<div class="small-4 columns">
-				<input type="text" name="commail"  maxlength="128" placeholder="邮箱（可选）" value="<?php echo $ckmail; ?>" size="22" tabindex="2">	
+			<div class="small-6 columns">
+				<input type="text" name="nobot" maxlength="128" placeholder="<?php echo SS_NOBOT_QUESTION; ?>" value="" size="22" tabindex="2">
+			</div>
+
+			<div class="small-6 columns">
+				<input type="text" name="commail"  maxlength="128" placeholder="邮箱（可选）" value="<?php echo $ckmail; ?>" size="22" tabindex="3">	
 			</div>
 				
-			<div class="small-4 columns">
-				<input type="text" name="comurl" maxlength="128" placeholder="主页（可选）" value="<?php echo $ckurl; ?>" size="22" tabindex="3">
+			<div class="small-6 columns">
+				<input type="text" name="comurl" maxlength="128" placeholder="主页（可选）" value="<?php echo $ckurl; ?>" size="22" tabindex="5">
 			</div>
 				
 			<?php endif; ?>
 			<div class="small-12 columns">
-				<textarea name="comment" id="comment" rows="4" tabindex="4"></textarea>
+				<textarea name="comment" id="comment" rows="4" tabindex="6"></textarea>
 			</div>
 			<div class="small-12 columns"><?php echo $verifyCode; ?> 
-				<button class="button small right" type="submit" id="comment_submit" value="发布" tabindex="6">
+				<button class="button small right" type="submit" id="comment_submit" value="发布" tabindex="7">
 					发布
 				</button>
 			</div>
