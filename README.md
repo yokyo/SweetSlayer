@@ -19,3 +19,6 @@
 
 #在线演示
 [品软网](http://pinruan.net)
+
+#dependency
+[Emlog5.3.1 frinity branch](https://git.oschina.net/noimagination/emlog5)，该版本基于Emlog5.3.1升级了部分功能，具体看项目说明或 diff
